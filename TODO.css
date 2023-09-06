@@ -1,0 +1,783 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media screen {
+    
+body{
+    background-color: #14dbfe1a;
+}
+header{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    background-color: #1265ffc9;
+    width: 100%;
+}
+.SearchBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.Bar{
+    width: 110vh;
+    height: 7vh;
+    border-radius: 5px;
+    border: 2px solid #14a0ff;
+    padding-left: 10px;
+    background-color: #14a1ff16;
+}
+.Searchicon{
+    color: white;
+    background-color: black;
+    margin-left: 1vh;
+    border-radius: 5px;
+    height: 7vh;
+    width: 7vh;
+    background-color: #14a0ff;
+    border: 2px solid #14a0ff;
+}
+.Item1, .Item2, .Item3 ,.Item4, .Item5, .Item6, .Item7, .Item8, .Item9{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    border: 2px solid #1265ff60;
+    width: 70vh;
+    border-radius: 5px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-top: 5vh;
+}
+.Items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.Size{
+    margin-left: 1vh;
+    width: 7vh;
+    border-radius: 5px;
+}
+.AddItem1,.AddItem2,.AddItem3,.AddItem4,.AddItem5,.AddItem6,.AddItem7,.AddItem8,.AddItem9{
+    margin-left: 4vh;
+    width: 6vh;
+    border-radius: 5px;
+    background-color: #14a0ff;
+    border: 1px solid #14a0ff;
+    color: rgba(255, 255, 255, 0.721);
+}
+img{
+    padding: 1vh 1vh 1vh;
+    border-radius: 5px;
+}
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1265ff3b; 
+    color: white;
+    padding: 0vh 0; 
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px 20px 10px; 
+    color: white; 
+}
+footer{
+    padding: 5vh 5vh 5vh;
+    background-color: #1265ff;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+.itemCount{
+    background-color: white;
+    color: black;
+    width: 20vh;
+    height: 7vh;
+    margin-right: 50vh;
+    border-radius: 5px;
+    padding: 1vh 1vh 1vh;
+    border: 1px solid #1265fffb;
+}
+.editButton{
+    background-color: white;
+    color: black;
+    width: 20vh;
+    height: 7vh;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 255, 0.781);
+}
+.NText{
+    padding: 1vh 1vh 1vh;
+    color: black;
+}
+.cart {
+    display: none;
+    background-color: #d0f8ff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.cartItems {
+    list-style-type: none;
+    padding: 1vh;
+}
+
+.cartItems li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #1265ff;
+    margin-bottom: 5px;
+}
+
+.cartItems .deleteIcon {
+    color: rgb(149, 50, 50);
+    cursor: pointer;
+}
+}
+@media screen and (max-width: 1160px) { 
+    
+    body{
+        background-color: #14dbfe1a;
+    }
+    header{
+        display: flex;
+        flex-direction: row ;
+        align-items: center;
+        justify-content: center;
+        background-color: #1265ffc9;
+        width: 100%;
+    }
+    .SearchBar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+    .Bar{
+        width: 110vh;
+        height: 7vh;
+        border-radius: 5px;
+        border: 2px solid #14a0ff;
+        padding-left: 10px;
+        background-color: #14a1ff16;
+    }
+    .Searchicon{
+        color: white;
+        background-color: black;
+        margin-left: 1vh;
+        border-radius: 5px;
+        height: 7vh;
+        width: 7vh;
+        background-color: #14a0ff;
+        border: 2px solid #14a0ff;
+    }
+    .Item1, .Item2, .Item3 ,.Item4, .Item5, .Item6, .Item7, .Item8, .Item9{
+        display: flex;
+        flex-direction: column  ;
+        align-items: center;
+        justify-content: left;
+        border: 2px solid #1265ff60;
+        width: 60vh;
+        border-radius: 5px;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        margin-top: 5vh;
+    }
+    .Items{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+    }
+    .Size{
+        margin-left: 1vh;
+        width: 7vh;
+        border-radius: 5px;
+    }
+    .AddItem1,.AddItem2,.AddItem3,.AddItem4,.AddItem5,.AddItem6,.AddItem7,.AddItem8,.AddItem9{
+        margin-left: 16vh;
+        width: 6vh;
+        border-radius: 5px;
+        background-color: #14a0ff;
+        border: 1px solid #14a0ff;
+        color: rgba(255, 255, 255, 0.721);
+    }
+    img{
+        padding: 1vh 1vh 1vh;
+        border-radius: 5px;
+    }
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #1265ff3b; 
+        color: white;
+        padding: 0vh 0; 
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    
+    .navbar a {
+        text-decoration: none;
+        padding: 10px 20px 10px; 
+        color: white; 
+    }
+    footer{
+        padding: 5vh 5vh 5vh;
+        background-color: #1265ffc9;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        margin-top: 5vh;
+        width: 100%;
+    }
+    .itemCount{
+        background-color: white;
+        color: black;
+        width: 20vh;
+        height: 7vh;
+        margin-right: 10vh;
+        border-radius: 5px;
+        padding: 1vh 1vh 1vh;
+        border: 1px solid #1265fffb;
+    }
+    .editButton{
+        background-color: white;
+        color: black;
+        width: 20vh;
+        height: 7vh;
+        border-radius: 5px;
+        border: 3px solid rgba(0, 0, 255, 0.781);
+    }
+    .NText{
+        padding: 1vh 1vh 1vh;
+        color: black;
+    }
+    .cart {
+        display: none;
+        background-color: #d0f8ff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 300px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+    
+    .cartItems {
+        list-style-type: none;
+        padding: 1vh;
+    }
+    
+    .cartItems li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        border-bottom: 1px solid #1265ff;
+        margin-bottom: 5px;
+    }
+    
+    .cartItems .deleteIcon {
+        color: rgb(149, 50, 50);
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 800px) { 
+    
+    body{
+        background-color: #14dbfe1a;
+    }
+    header{
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        justify-content: center;
+        background-color: #1265ffc9;
+        width: 100%;
+    }
+    .SearchBar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+    .Bar{
+        width: 110vh;
+        height: 7vh;
+        border-radius: 5px;
+        border: 2px solid #14a0ff;
+        padding-left: 10px;
+        background-color: #14a1ff16;
+    }
+    .Searchicon{
+        color: white;
+        background-color: black;
+        margin-left: 1vh;
+        border-radius: 5px;
+        height: 7vh;
+        width: 7vh;
+        background-color: #14a0ff;
+        border: 2px solid #14a0ff;
+    }
+    .Item1, .Item2, .Item3 ,.Item4, .Item5, .Item6, .Item7, .Item8, .Item9{
+        display: flex;
+        flex-direction: column  ;
+        align-items: center;
+        justify-content: left;
+        border: 2px solid #1265ff60;
+        width: 60vh;
+        border-radius: 5px;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        margin-top: 5vh;
+    }
+    .Items{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+    }
+    .Size{
+        margin-left: 1vh;
+        width: 7vh;
+        border-radius: 5px;
+    }
+    .AddItem1,.AddItem2,.AddItem3,.AddItem4,.AddItem5,.AddItem6,.AddItem7,.AddItem8,.AddItem9{
+        margin-left: 4vh;
+        width: 6vh;
+        border-radius: 5px;
+        background-color: #14a0ff;
+        border: 1px solid #14a0ff;
+        color: rgba(255, 255, 255, 0.721);
+    }
+    img{
+        padding: 1vh 1vh 1vh;
+        border-radius: 5px;
+    }
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #1265ff3b; 
+        color: white;
+        padding: 0vh 0; 
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    
+    .navbar a {
+        text-decoration: none;
+        padding: 10px 20px 10px; 
+        color: white; 
+    }
+    footer{
+        padding: 5vh 5vh 5vh;
+        background-color: #1265ffc9;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+    }
+    .itemCount{
+        background-color: white;
+        color: black;
+        width: 20vh;
+        height: 7vh;
+        margin-right: 50vh;
+        border-radius: 5px;
+        padding: 1vh 1vh 1vh;
+        border: 1px solid #1265fffb;
+    }
+    .editButton{
+        background-color: white;
+        color: black;
+        width: 20vh;
+        height: 7vh;
+        border-radius: 5px;
+        border: 3px solid rgba(0, 0, 255, 0.781);
+    }
+    .NText{
+        padding: 1vh 1vh 1vh;
+        color: black;
+    }
+    .cart {
+        display: none;
+        background-color: #d0f8ff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 300px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+    
+    .cartItems {
+        list-style-type: none;
+        padding: 1vh;
+    }
+    
+    .cartItems li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        border-bottom: 1px solid #1265ff;
+        margin-bottom: 5px;
+    }
+    
+    .cartItems .deleteIcon {
+        color: rgb(149, 50, 50);
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 450px) { 
+    
+        body{
+            background-color: #14dbfe1a;
+        }
+        header{
+            display: flex;
+            flex-direction: column ;
+            align-items: center;
+            justify-content: center;
+            background-color: #1265ffc9;
+            width: 100%;
+        }
+        .SearchBar{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5vh;
+        }
+        .Bar{
+            width: 110vh;
+            height: 7vh;
+            border-radius: 5px;
+            border: 2px solid #14a0ff;
+            padding-left: 10px;
+            background-color: #14a1ff16;
+        }
+        .Searchicon{
+            color: white;
+            background-color: black;
+            margin-left: 1vh;
+            border-radius: 5px;
+            height: 7vh;
+            width: 7vh;
+            background-color: #14a0ff;
+            border: 2px solid #14a0ff;
+        }
+        .Item1, .Item2, .Item3 ,.Item4, .Item5, .Item6, .Item7, .Item8, .Item9{
+            display: flex;
+            flex-direction: column  ;
+            align-items: center;
+            justify-content: left;
+            border: 2px solid #1265ff60;
+            width: 60vh;
+            border-radius: 5px;
+            margin-left: 2vh;
+            margin-right: 2vh;
+            margin-top: 5vh;
+        }
+        .Items{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: left;
+        }
+        .Size{
+            margin-left: 1vh;
+            width: 7vh;
+            border-radius: 5px;
+        }
+        .AddItem1,.AddItem2,.AddItem3,.AddItem4,.AddItem5,.AddItem6,.AddItem7,.AddItem8,.AddItem9{
+            margin-left: 4vh;
+            width: 6vh;
+            border-radius: 5px;
+            background-color: #14a0ff;
+            border: 1px solid #14a0ff;
+            color: rgba(255, 255, 255, 0.721);
+        }
+        img{
+            padding: 1vh 1vh 1vh;
+            border-radius: 5px;
+        }
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1265ff3b; 
+            color: white;
+            padding: 0vh 0; 
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        
+        .navbar a {
+            text-decoration: none;
+            padding: 10px 20px 10px; 
+            color: white; 
+        }
+        footer{
+            padding: 5vh 5vh 5vh;
+            background-color: #1265ffc9;
+            display: flex;
+            justify-content: center;
+            font-size: 10px;
+            width: 100%;
+        }
+        .itemCount{
+            background-color: white;
+            color: black;
+            width: 20vh;
+            height: 7vh;
+            margin-right: 5vh;
+            border-radius: 5px;
+            padding: 1vh 1vh 1vh;
+            border: 1px solid #1265fffb;
+        }
+        .editButton{
+            background-color: white;
+            color: black;
+            width: 20vh;
+            height: 7vh;
+            border-radius: 5px;
+            border: 3px solid rgba(0, 0, 255, 0.781);
+        }
+        .NText{
+            padding: 1vh 1vh 1vh;
+            color: black;
+        }
+        .cart {
+            display: none;
+            background-color: #d0f8ff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        
+        .cartItems {
+            list-style-type: none;
+            padding: 1vh;
+        }
+        
+        .cartItems li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            border-bottom: 1px solid #1265ff;
+            margin-bottom: 5px;
+        }
+        
+        .cartItems .deleteIcon {
+            color: rgb(149, 50, 50);
+            cursor: pointer;
+        }
+}
+@media screen and (max-width: 410px) { 
+    
+    body{
+        background-color: #14dbfe1a;
+    }
+    header{
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        justify-content: center;
+        background-color: #1265ffc9;
+        width: 100%;
+    }
+    .SearchBar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+    .Bar{
+        width: 110vh;
+        height: 7vh;
+        border-radius: 5px;
+        border: 2px solid #14a0ff;
+        padding-left: 10px;
+        background-color: #14a1ff16;
+    }
+    .Searchicon{
+        color: white;
+        background-color: black;
+        margin-left: 1vh;
+        border-radius: 5px;
+        height: 7vh;
+        width: 7vh;
+        background-color: #14a0ff;
+        border: 2px solid #14a0ff;
+    }
+    .Item1, .Item2, .Item3 ,.Item4, .Item5, .Item6, .Item7, .Item8, .Item9{
+        display: flex;
+        flex-direction: column  ;
+        align-items: center;
+        justify-content: left;
+        border: 2px solid #1265ff60;
+        width: 60vh;
+        border-radius: 5px;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        margin-top: 5vh;
+    }
+    .Items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Size{
+        margin-left: 1vh;
+        width: 7vh;
+        border-radius: 5px;
+    }
+    .AddItem1,.AddItem2,.AddItem3,.AddItem4,.AddItem5,.AddItem6,.AddItem7,.AddItem8,.AddItem9{
+        margin-left: 4vh;
+        width: 6vh;
+        border-radius: 5px;
+        background-color: #14a0ff;
+        border: 1px solid #14a0ff;
+        color: rgba(255, 255, 255, 0.721);
+    }
+    img{
+        padding: 1vh 1vh 1vh;
+        border-radius: 5px;
+    }
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #1265ff3b; 
+        color: white;
+        padding: 0vh 0; 
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    
+    .navbar a {
+        text-decoration: none;
+        padding: 10px 20px 10px; 
+        color: white; 
+    }
+    footer{
+        padding: 5vh 5vh 5vh;
+        background-color: #1265ffc9;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        width: 100%;
+    }
+    .itemCount{
+        background-color: white;
+        color: black;
+        width: 5vh;
+        height: 5vh;
+        margin-right: 5vh;
+        border-radius: 5px;
+        border: 1px solid #1265fffb;
+    }
+    .editButton{
+        background-color: white;
+        color: black;
+        width: 7vh;
+        height: 5vh;
+        border-radius: 5px;
+        border: 3px solid rgba(0, 0, 255, 0.781);
+    }
+    .NText{
+        padding: 1vh 1vh 1vh;
+        color: black;
+    }
+    .cart {
+        display: none;
+        background-color: #d0f8ff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+    
+    .cartItems {
+        list-style-type: none;
+        padding: 1vh;
+    }
+    
+    .cartItems li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        border-bottom: 1px solid #1265ff;
+        margin-bottom: 5px;
+    }
+    
+    .cartItems .deleteIcon {
+        color: rgb(149, 50, 50);
+        cursor: pointer;
+    }
+}
